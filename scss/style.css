@@ -1,0 +1,400 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+h4 {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+p {
+  font-size: 1rem;
+  margin: 10px 0;
+  line-height: 1.7em;
+  text-align: justify;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  margin: auto;
+  max-width: 1300px;
+  padding: 0 20px;
+}
+
+.large {
+  font-size: 18px;
+}
+
+.display-1 {
+  font-size: 4rem;
+}
+
+.btn {
+  display: inline-block;
+  font-size: 15px;
+  padding: 12px 23px;
+  cursor: pointer;
+  font-weight: bold;
+  letter-spacing: 1px;
+  border-radius: 4px;
+}
+.btn-dark {
+  background: #058C42;
+  border: 3px solid #058C42;
+  color: #fff;
+}
+
+form label {
+  display: inline-block;
+  margin-bottom: 6px;
+}
+form .form-group {
+  margin-bottom: 16px;
+}
+form .form-group-control {
+  width: 100%;
+  padding: 7px 12px;
+  font-size: 1rem;
+  line-height: 1.5;
+  background: #f9f9f9;
+  border: none;
+  border-radius: 4px;
+}
+form button {
+  width: 100%;
+}
+
+#navbar {
+  height: 14vh;
+  background: #003844;
+  color: #fff;
+  overflow: auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+#navbar a {
+  color: #fff;
+}
+#navbar .logo {
+  width: 275px;
+  height: 65px;
+  border: none;
+}
+#navbar ul {
+  list-style: none;
+  float: right;
+}
+#navbar ul li {
+  float: left;
+}
+#navbar ul li a {
+  display: block;
+  padding: 20px;
+  text-align: center;
+}
+
+hr {
+  border: none;
+  height: 10px;
+  background-color: #058C42;
+  margin: 0px 0;
+}
+
+#showcase {
+  height: 95vh;
+  padding: 125px 0;
+  background: url("/images/Pacifico.jpeg");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+}
+#showcase h1 {
+  width: 50%;
+}
+#showcase p {
+  width: 35%;
+  padding: 15px 0;
+  text-align: justify;
+}
+
+#objetivo {
+  padding: 50px 0;
+}
+#objetivo h2 {
+  text-align: center;
+  padding-bottom: 50px;
+}
+#objetivo img {
+  width: 100%;
+}
+#objetivo .objetivo-flex {
+  display: flex;
+}
+#objetivo .objetivo-flex-image {
+  flex: 1;
+}
+#objetivo .objetivo-flex-description {
+  flex: 1;
+  padding: 20px 40px;
+}
+
+#metodo {
+  padding: 50px 0;
+  background: #f9f9f9;
+}
+#metodo h2 {
+  text-align: center;
+  padding-bottom: 10px;
+}
+#metodo p.large {
+  text-align: center;
+  padding-bottom: 50px;
+}
+#metodo .metodo-flex {
+  display: flex;
+  gap: 10px;
+}
+#metodo .metodo-flex img {
+  height: 550px;
+}
+#metodo .metodo-flex-box {
+  background: #fff;
+  padding: 5px 2px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+#logros {
+  padding: 50px 0;
+  background: #f9f9f9;
+}
+#logros h2 {
+  text-align: center;
+  padding-bottom: 10px;
+}
+#logros p.large {
+  text-align: center;
+  padding-bottom: 50px;
+}
+#logros .logros-flex {
+  display: flex;
+  gap: 10px;
+}
+#logros .logros-flex img {
+  height: 40px;
+}
+#logros .logros-flex-box {
+  background: #fff;
+  padding: 50px 10px;
+  text-align: center;
+  border-radius: 20px;
+}
+#logros .logros-flex-box h4 {
+  padding: 10px 0;
+}
+
+#cifras {
+  padding: 50px 0;
+  background: #f9f9f9;
+}
+#cifras h2 {
+  text-align: center;
+  padding-bottom: 10px;
+}
+#cifras p.large {
+  text-align: center;
+  padding-bottom: 50px;
+}
+#cifras .cifras-flex {
+  display: flex;
+  gap: 10px;
+}
+#cifras .cifras-flex img {
+  height: 40px;
+}
+#cifras .cifras-flex-box {
+  background: #fff;
+  padding: 50px 10px;
+  text-align: center;
+  border-radius: 20px;
+}
+#cifras .cifras-flex-box h4 {
+  padding: 10px 0;
+}
+
+#contacto {
+  padding: 50px 0;
+}
+#contacto h2 {
+  text-align: center;
+  padding-bottom: 10px;
+}
+#contacto p.large {
+  text-align: center;
+  padding-bottom: 5px;
+}
+#contacto form {
+  width: 50%;
+  margin: 0 auto;
+}
+
+footer {
+  background: #003844;
+  text-align: center;
+  padding: 30px;
+}
+
+.socialIconos {
+  display: flex;
+  justify-content: center;
+}
+
+.socialIconos a {
+  text-decoration: none;
+  padding: 10px;
+  background-color: #058C42;
+  margin: 10px;
+  border-radius: 50%;
+}
+
+.socialIconos a i {
+  font-size: 2em;
+  color: #f9f9f9;
+  opacity: 0, 9;
+}
+
+.socialIconos a:hover {
+  background-color: #111;
+  transition: 0.5s;
+}
+
+.socialIconos a:hover i {
+  color: white;
+  transition: 0.5s;
+}
+
+.footerNav ul li a {
+  color: white;
+  margin: 20px;
+  font-size: 1.3em;
+  opacity: 0.7;
+  transition: 0.5s;
+}
+
+.footerNav ul li a:hover {
+  opacity: 1;
+}
+
+footer .imagen-footer2 {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 112px;
+  margin-left: 10px;
+  background: #fff;
+  border-radius: 10%;
+}
+
+footer .imagen-footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: 80px;
+  margin-right: 10px;
+}
+
+.container {
+  position: relative;
+}
+
+@media (max-width: 700px) {
+  .display-1 {
+    font-size: 4rem;
+  }
+  /* Navbar */
+  #navbar {
+    height: 100%;
+  }
+  #navbar .logo {
+    float: none;
+    text-align: center;
+  }
+  hr {
+    border: none;
+    height: 10px;
+    background-color: #058C42;
+    margin: 0px 0;
+  }
+  #showcase {
+    height: 100%;
+    padding: 50px 0;
+  }
+  #objeivo {
+    padding: 50px 0;
+  }
+  #objeivo .objetivo-flex {
+    flex-direction: column;
+  }
+  #objeivo .objetivo-flex-description {
+    text-align: center;
+    padding: 20px 0;
+  }
+  #metodo {
+    padding: 50px 0;
+  }
+  #metodo .metodo-flex {
+    flex-direction: column;
+  }
+  #logros {
+    padding: 50px 0;
+  }
+  #logros .logros-flex {
+    flex-direction: column;
+  }
+  #cifras {
+    padding: 50px 0;
+  }
+  #cifras .cifras-flex {
+    flex-direction: column;
+  }
+  #contacto {
+    padding: 80px 0;
+  }
+  #contacto form {
+    width: 100%;
+  }
+  footer .imagen-footer,
+  footer .imagen-footer2 {
+    position: static;
+    display: block;
+    margin: 10px auto;
+    height: 40px;
+  }
+  .container {
+    text-align: center;
+  }
+  .socialIconos {
+    margin-top: 20px;
+  }
+}/*# sourceMappingURL=style.css.map */

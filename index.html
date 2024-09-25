@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="scss/style.css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+		<title>GI2T</title>
+	</head>
+	<body>
+		<hr>
+		<header id="mainheader">
+			<nav id="navbar">
+				<div class="container">
+					<img src="images/Unpa.png" alt="" class="logo">
+					<ul>
+						<li><a href="#mainheader">Inicio</a></li>
+						<li><a href="#objetivo">Objetivo</a></li>
+						<li><a href="#metodo">Metodologia</a></li>
+						<li><a href="#logros">Logros</a></li>
+                        <li><a href="#cifras">Cifras Relevantes</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+					</ul>
+				</div>
+			</nav>
+			<hr>
+			<div id="showcase">
+				<div class="container">
+					<h1 class="display-1">Uso y apropiación de las TICs</h1>
+					<p>
+						Este proyecto tiene como objetivo principal analizar y comprender el acceso, uso y apropiación de Tecnologías de la Información y Comunicación (TICs) entre los estudiantes de bachillerato y media vocacional en el Litoral Pacífico. 
+						A través de una investigación exhaustiva, buscamos identificar las brechas y oportunidades en el uso de las TICs, contribuyendo al desarrollo educativo y social de la región.
+					</p>
+					<a href="#contacto" class="btn btn-dark">Contactanos</a>
+				</div>
+			</div>
+			<hr>
+		</header>
+
+		<section id="objetivo">
+			<div class="container">
+				<h2>Objetivo</h2>
+				<div class="objetivo-flex">
+					<div class="objetivo-flex-image">
+						<img src="/images/Objetivo.jpg" alt="" />
+					</div>
+					<div class="objetivo-flex-description">
+						<h4>Objetivo del proyecto</h4>
+						<p>
+							El objetivo de este proyecto es realizar una caracterización detallada del acceso, uso y apropiación de las Tecnologías de la Información y Comunicación (TICs) entre los estudiantes de bachillerato y media vocacional en el Litoral Pacífico. 
+							Esta investigación es fundamental para identificar las desigualdades y limitaciones que enfrentan los estudiantes en su interacción con las TICs, factores que pueden influir en su desarrollo académico y profesional.
+						</p>
+						<p>
+							Al comprender mejor cómo los estudiantes acceden y utilizan estas tecnologías, así como su grado de apropiación, se pueden diseñar estrategias educativas y políticas públicas más efectivas que promuevan la inclusión digital y reduzcan las brechas tecnológicas en la región. 
+							Este esfuerzo es crucial para garantizar que todos los estudiantes tengan la oportunidad de beneficiarse plenamente de las TICs, fomentando así un entorno educativo más equitativo, innovador y capaz de responder a los desafíos del siglo XXI.
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="metodo">
+			<div class="container">
+				<h2>Metodologia</h2>
+				<p class="large">
+					La metodología del proyecto se basa en un enfoque mixto, combinando técnicas cuantitativas y cualitativas para obtener una visión integral del acceso, 
+					uso y apropiación de las TICs por parte de los estudiantes en el Litoral Pacífico.
+				</p>
+				<div class="metodo-flex">
+					<div class="metodo-flex-box">
+
+						<img src="/images/recoleccion.svg" alt="" />
+					</div>
+					<div class="metodo-flex-box">
+						<img src="/images/aplicacion.svg" alt="" />
+						
+					</div>
+					<div class="metodo-flex-box">
+						<img src="/images/resultados.svg" alt="" />
+						
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="logros">
+			<div class="container">
+				<h2>Logros Alcanzados</h2>
+				<p class="large">
+					El proyecto ha alcanzado varios hitos importantes relacionados con el acceso, uso y apropiación de las TICs en el Litoral Pacífico.
+					 Estos logros han permitido obtener una visión más clara sobre las necesidades tecnológicas y las oportunidades de mejora en la región.
+				</p>
+				<div class="logros-flex">
+					<!-- Gráfico de Barras -->
+					<div class="logros-flex-box">
+						<h4>Evaluación de Instituciones Educativas</h4>
+						<canvas id="institucionesChart" width="400" height="200"></canvas>
+						<p>
+							Se ha evaluado el acceso a las TICs en más de 50 instituciones de educación media y bachillerato en la región,
+							 permitiendo identificar brechas tecnológicas significativas.
+						</p>
+					</div>
+					<!-- Gráfico de Tarta -->
+					<div class="logros-flex-box">
+						<h4>Capacitación en TICs</h4>
+						<canvas id="capacitacionChart" width="400" height="200"></canvas>
+						<p>
+							120 docentes y coordinadores han sido capacitados en el uso adecuado de las TICs para la enseñanza,
+							 incrementando la adopción de tecnologías en las aulas.
+						</p>
+					</div>
+					<!-- Gráfico de Líneas -->
+					<div class="logros-flex-box">
+						<h4>Implementación de Estrategias de Apropiación Tecnológica</h4>
+						<canvas id="estrategiasChart" width="400" height="200"></canvas>
+						<p>
+							Se han desarrollado e implementado estrategias de apropiación tecnológica para los estudiantes,
+							 beneficiando a más de 2000 alumnos, quienes ahora utilizan las TICs de manera más eficiente en su proceso educativo.
+						</p>
+					</div>
+				</div>
+			</div>
+			<!-- Incluir Chart.js desde CDN -->
+			<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+			<!-- Código JavaScript para los gráficos -->
+			<script>
+				document.addEventListener('DOMContentLoaded', function() {
+					// Gráfico de Barras
+					var ctx1 = document.getElementById('institucionesChart').getContext('2d');
+					new Chart(ctx1, {
+						type: 'bar',
+						data: {
+							labels: ['Instituciones Públicas', 'Instituciones Privadas', 'Instituciones Técnicas'],
+							datasets: [{
+								label: 'Número de Instituciones Evaluadas',
+								data: [30, 15, 5],
+								backgroundColor: [
+									'rgba(75, 192, 192, 0.2)',
+									'rgba(153, 102, 255, 0.2)',
+									'rgba(255, 159, 64, 0.2)'
+								],
+								borderColor: [
+									'rgba(75, 192, 192, 1)',
+									'rgba(153, 102, 255, 1)',
+									'rgba(255, 159, 64, 1)'
+								],
+								borderWidth: 1
+							}]
+						},
+						options: {
+							scales: {
+								y: {
+									beginAtZero: true
+								}
+							}
+						}
+					});
+		
+					// Gráfico de Tarta
+					var ctx2 = document.getElementById('capacitacionChart').getContext('2d');
+					new Chart(ctx2, {
+						type: 'pie',
+						data: {
+							labels: ['Capacitados', 'No Capacitados'],
+							datasets: [{
+								label: 'Porcentaje de Docentes Capacitados',
+								data: [120, 80],
+								backgroundColor: [
+									'rgba(75, 192, 192, 0.2)',
+									'rgba(255, 99, 132, 0.2)'
+								],
+								borderColor: [
+									'rgba(75, 192, 192, 1)',
+									'rgba(255, 99, 132, 1)'
+								],
+								borderWidth: 1
+							}]
+						}
+					});
+		
+					// Gráfico de Líneas
+					var ctx3 = document.getElementById('estrategiasChart').getContext('2d');
+					new Chart(ctx3, {
+						type: 'line',
+						data: {
+							labels: ['2022-2', '2023-1', '2023-2', '2024-1'],
+							datasets: [{
+								label: 'Número de Estudiantes Beneficiados',
+								data: [500, 800, 1200, 2000],
+								backgroundColor: 'rgba(75, 192, 192, 0.2)',
+								borderColor: 'rgba(75, 192, 192, 1)',
+								borderWidth: 1,
+								fill: true
+							}]
+						},
+						options: {
+							scales: {
+								y: {
+									beginAtZero: true
+								}
+							}
+						}
+					});
+				});
+			</script>
+		</section>
+		
+
+		<section id="cifras">
+			<div class="container">
+				<h2>Cifras Relevantes</h2>
+				<p class="large">
+					En este apartado se muestran las cifras relevantes.	
+				</p>
+				<div class="cifras-flex">
+					<!-- Gráfico de Barras - Cuestionarios y Encuestas -->
+					<div class="cifras-flex-box">
+						<canvas id="graficoBarrasCuestionarios" width="400" height="200"></canvas>
+						<h4>Número de Instrumentos Aplicados: 150</h4>
+						<p>
+							Comparación visual del número de cuestionarios y encuestas administradas a estudiantes y docentes.
+						</p>
+					</div>
+					<!-- Gráfico de Tarta - Instituciones Evaluadas -->
+					<div class="cifras-flex-box">
+						<canvas id="graficoTartaInstituciones" width="400" height="200"></canvas>
+						<h4>Cantidad de Instituciones Evaluadas: 50</h4>
+						<p>
+							Visualización de la distribución de instituciones educativas evaluadas: públicas, privadas y técnicas.
+						</p>
+					</div>
+					<!-- Gráfico de Barras - Datos Recogidos por Ciclo -->
+					<div class="cifras-flex-box">
+						<canvas id="graficoBarrasCiclos" width="400" height="200"></canvas>
+						<h4>Número de Ciclos de Levantamiento de Datos Realizados: 3</h4>
+						<p>
+							Visualización de la cantidad de datos recogidos en cada uno de los tres ciclos de levantamiento de datos.
+						</p>
+					</div>
+				</div>
+			</div>
+			<!-- Incluir Chart.js desde CDN -->
+			<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+			<!-- Código JavaScript para los gráficos -->
+			<script>
+				document.addEventListener('DOMContentLoaded', function() {
+					// Gráfico de Barras - Cuestionarios y Encuestas
+					var ctxBarrasCuestionarios = document.getElementById('graficoBarrasCuestionarios').getContext('2d');
+					new Chart(ctxBarrasCuestionarios, {
+						type: 'bar',
+						data: {
+							labels: ['Estudiantes', 'Docentes'],
+							datasets: [{
+								label: 'Número de Cuestionarios y Encuestas',
+								data: [120, 30], // Ejemplo de datos: 120 para estudiantes y 30 para docentes
+								backgroundColor: [
+									'rgba(54, 162, 235, 0.2)', // Azul para Estudiantes
+									'rgba(75, 192, 192, 0.2)'  // Verde para Docentes
+								],
+								borderColor: [
+									'rgba(54, 162, 235, 1)', // Azul para Estudiantes
+									'rgba(75, 192, 192, 1)'  // Verde para Docentes
+								],
+								borderWidth: 1
+							}]
+						},
+						options: {
+							scales: {
+								y: {
+									beginAtZero: true,
+									title: {
+										display: true,
+										text: 'Cantidad'
+									}
+								},
+								x: {
+									title: {
+										display: true,
+										text: 'Categorías'
+									}
+								}
+							}
+						}
+					});
+		
+					// Gráfico de Tarta - Instituciones Evaluadas
+					var ctxTartaInstituciones = document.getElementById('graficoTartaInstituciones').getContext('2d');
+					new Chart(ctxTartaInstituciones, {
+						type: 'pie',
+						data: {
+							labels: ['Escuelas Públicas', 'Escuelas Privadas', 'Escuelas Técnicas'],
+							datasets: [{
+								label: 'Distribución de Instituciones Evaluadas',
+								data: [20, 15, 15], // Ejemplo de datos: 20 públicas, 15 privadas, 15 técnicas
+								backgroundColor: [
+									'rgba(255, 99, 132, 0.2)', // Rosa para Públicas
+									'rgba(54, 162, 235, 0.2)', // Azul para Privadas
+									'rgba(75, 192, 192, 0.2)'  // Verde para Técnicas
+								],
+								borderColor: [
+									'rgba(255, 99, 132, 1)', // Rosa para Públicas
+									'rgba(54, 162, 235, 1)', // Azul para Privadas
+									'rgba(75, 192, 192, 1)'  // Verde para Técnicas
+								],
+								borderWidth: 1
+							}]
+						},
+						options: {
+							plugins: {
+								legend: {
+									display: true
+								},
+								tooltip: {
+									callbacks: {
+										label: function(tooltipItem) {
+											return tooltipItem.label + ': ' + tooltipItem.raw;
+										}
+									}
+								}
+							}
+						}
+					});
+		
+					// Gráfico de Barras - Datos Recogidos por Ciclo
+					var ctxBarrasCiclos = document.getElementById('graficoBarrasCiclos').getContext('2d');
+					new Chart(ctxBarrasCiclos, {
+						type: 'bar',
+						data: {
+							labels: ['Ciclo 1', 'Ciclo 2', 'Ciclo 3'],
+							datasets: [{
+								label: 'Cantidad de Datos Recogidos',
+								data: [50, 70, 80], // Ejemplo de datos: 50 datos en el ciclo 1, 70 en el ciclo 2, 80 en el ciclo 3
+								backgroundColor: [
+									'rgba(255, 99, 132, 0.2)', // Color para Ciclo 1
+									'rgba(54, 162, 235, 0.2)', // Color para Ciclo 2
+									'rgba(75, 192, 192, 0.2)'  // Color para Ciclo 3
+								],
+								borderColor: [
+									'rgba(255, 99, 132, 1)', // Color para Ciclo 1
+									'rgba(54, 162, 235, 1)', // Color para Ciclo 2
+									'rgba(75, 192, 192, 1)'  // Color para Ciclo 3
+								],
+								borderWidth: 1
+							}]
+						},
+						options: {
+							scales: {
+								y: {
+									beginAtZero: true,
+									title: {
+										display: true,
+										text: 'Cantidad de Datos'
+									}
+								},
+								x: {
+									title: {
+										display: true,
+										text: 'Ciclos de Datos'
+									}
+								}
+							}
+						}
+					});
+				});
+			</script>
+		</section>
+		
+
+		<section id="contacto">
+			<div class="container">
+				<h2>Contacto</h2>
+				<p class="large">
+					JOSE FERNANDO PINEDA MOSQUERA ---------- > jfpineda@unipacifico.edu.co
+				</p>
+				<p class="large">
+					ALEXANDER REYES CASTRO --------- > areyesc@unipacifico.edu.co
+				</p>
+				<form action="">
+					<div class="form-group">
+						<label for="name">Nombre</label>
+						<input type="text" class="form-group-control" />
+					</div>
+					<div class="form-group">
+						<label for="email">Correo</label>
+						<input type="email" class="form-group-control" />
+					</div>
+					<div class="form-group">
+						<label for="message">Mensaje</label>
+						<textarea name="" id="" cols="30" rows="10" class="form-group-control"></textarea>
+					</div>
+					<button class="btn btn-dark">Enviar Mensaje</button>
+				</form>
+			</div>
+		</section>
+		<hr>
+		<footer>
+			<div class="container">
+				<img src="/images/logogi2t.svg" alt="" class="imagen-footer2">
+
+				<div class="socialIconos">
+					<a href="https://www.facebook.com/UnipacificoOmarbaronamurillo"><i class="fa-brands fa-facebook"></i></a>
+					<a href="https://www.instagram.com/unipacifico?igsh=amM0dTZ1aHh1cHg2"><i class="fa-brands fa-instagram"></i></a>
+					<a href="https://x.com/home?lang=es"><i class="fa-brands fa-twitter"></i></a>
+					<a href="http://www.unipacifico.edu.co/"><i class="fa-brands fa-google-plus"></i></a>
+					<a href="https://www.youtube.com/@UnidelPacifico"><i class="fa-brands fa-youtube"></i></a>
+				</div>
+				<div class="footerNav">
+					<ul><li><a href="#mainheader">INICIO</a></li></ul>
+				</div>
+				<img src="/images/inge.svg" alt="" class="imagen-footer">
+			</div>
+		</footer>
+		<hr>
+	</body>
+</html>
